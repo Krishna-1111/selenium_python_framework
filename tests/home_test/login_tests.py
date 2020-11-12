@@ -13,7 +13,8 @@ TestStatus.__test__ = False
 @pytest.mark.usefixtures("oneTimeSetUp", "setUp")
 class LoginTests(unittest.TestCase):
 
-    log = cl.customLogger(logging.DEBUG)
+    # log = cl.customLogger(logging.DEBUG)
+    # log = cl.customLogger(logging.DEBUG, file_name="automation_test_suite")
 
     @pytest.fixture(autouse=True)
     def class_level_setup(self):

@@ -6,7 +6,8 @@ from base.basepage import BasePage
 class NavigationPage(BasePage):
 
     # log = cl.customLogger(logging.DEBUG)
-    log = cl.customLogger(logging.DEBUG, file_name="automation_exercise_ddt_csv")
+    # log = cl.customLogger(logging.DEBUG, file_name="automation_exercise_ddt_csv")
+    log = cl.customLogger(logging.DEBUG, file_name="automation_test_suite")
 
     def __init__(self, driver):
         super().__init__(driver)
