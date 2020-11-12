@@ -15,7 +15,8 @@ import logging
 
 class Util(object):
 
-    log = cl.customLogger(logging.INFO)
+    # log = cl.customLogger(logging.INFO)
+    log = cl.customLogger(logging.DEBUG, file_name="automation_test_suite")
 
     def sleep(self, sec, info=""):
         """
